@@ -1,0 +1,380 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* container  */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* flex  */
+.flex{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+}
+
+
+
+/* color codes */
+/* #EA513E  orange color  */
+/* #5CBD9D */
+/* #E67F31  */
+/* #3998DB */
+/* #68CD73 */
+
+/* header */
+.clearfix::before{
+	content: "";
+	background:url('banner.jpg') no-repeat center center/cover;
+	height: 500px;
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.social-media{
+	width: 20%;
+	padding: 20px;
+}
+.logo a{
+	text-decoration: none;
+	background-color: white;
+	color: rgb(68, 67, 67);
+	border-radius:30px;
+	padding: 8px;
+	font-size: 12px;
+}
+
+/* navigation bar  */
+.navbar{
+	background-color: white;
+	display: flex;
+	width: 80%;
+	margin: 0 10%;
+	justify-content: space-between;
+	position: fixed;
+	flex-wrap: wrap;
+}
+.head{
+	color: #EA513E;
+	font-size: 40px;
+	font-weight: bolder;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.navigation a{
+	margin: 10px;
+	text-decoration: none;
+	color: black;
+}
+.navigation a:hover{
+	color:#EA513E ;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+/* home */
+.home{
+	margin-top: 150px;
+	text-align: center;
+}
+.head-2{
+	color: white;
+	font-size: 32px;
+	font-weight: bolder;
+}
+.horizontal{
+	margin: 20px 35%;
+}
+.head-3{
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.btn{
+	background-color: #EA513E;
+	color: white;
+	font-size: 15px;
+	padding: 10px;
+	margin: 20px;
+	border: 0;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+
+/* dot section  */
+.image-scroller{
+	width: 55px;
+	margin-top: 150px;
+}
+.dot{
+	background-color: black;
+	width: 7px;
+	height: 7px;
+	border-radius: 40px;
+}
+.dot-1{
+	background-color: grey;
+	width: 7px;
+	height: 7px;
+	border-radius: 40px;
+}
+
+/* services section  */
+.services{
+	margin-top:100px;
+	text-align: center;
+}
+.sec-head{
+	font-size: 20px;
+	font-weight: bolder;
+	}
+.horizontal-2{
+	margin: 5px 45%;
+}
+.para{
+	margin: 10px;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.box-container{
+	margin-top: 70px;
+	flex-wrap: wrap;
+}
+.box i{
+	color: white;
+	padding: 100px;
+}
+.box-1{
+	background-color: #5CBD9D;
+}
+.box-2{
+	background-color: #E67F31;
+}
+.box-3{
+	background-color:#3998DB;
+}
+.box-4{
+	background-color:#68CD73;
+}
+
+/* portfolio  */
+.portfolio{
+	margin-top: 150px;
+	text-align:center;
+}
+.col{
+	margin: 20px 0;
+	flex-shrink: -2;
+}
+.col-img{
+	margin: 10px 15px;
+	width: 25%;
+}
+.col-img img{
+	width: 100%;
+}
+
+
+/* team  */
+.team{
+	text-align: center;
+	margin-top: 120px;
+}
+.members{
+	margin: 30px 0;
+}
+.team-img{
+	width: 25%;
+	margin: 20px;
+}
+.team-img img{
+	width: 100%;
+	border-radius: 100%;
+}
+
+/* head and para  */
+.team-head{
+	color: rgb(54, 52, 52);
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 10px;
+}
+.team-para{
+	color: rgb(70, 67, 67);
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 10px;
+}
+
+/* information section  */
+.team-info{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+.info{
+	width: 55%;
+	margin: 20px;
+}
+.info-para{
+	margin: 10px 0;
+	text-align: left;
+}
+.percentage{
+	width: 35%;
+	margin: 20px;
+}
+.bar{
+	background-color: #E7E7E7 ;
+	margin-top: 10px;
+	color: white;
+	text-transform: uppercase;
+}
+.percent-photoshop{
+	width: 90%;
+	background-color: #EA513E;
+	padding: 5px;
+}
+ 
+.percent-html-css{
+	width: 80%;
+	background-color: #EA513E;
+	padding: 5px;
+}
+ 
+.percent-development{
+	width: 70%;
+	background-color: #EA513E;
+	padding: 5px;
+}
+ 
+.percent-marketing{
+	width: 80%;
+	background-color: #EA513E;
+	padding: 5px;
+}
+
+/* contact section  */
+.contact{
+	text-align: center;
+	margin-top: 100px;
+}
+.map{
+	margin: 20px 0;
+}
+
+.form{
+	display: flex;
+	justify-content: space-between;
+}
+.contact-info{
+	width: 60%;
+	text-align: left;
+	font-size: 20px;
+}
+.contact-para{
+	margin: 8px 0;
+}
+.information{
+	margin: 10px 0;
+}
+.mail{
+	display: flex;
+}
+.email{
+	color: #EA513E;
+	margin: 10px 0;
+}
+form{
+	width: 35%;
+}
+.input{
+	display: block;
+	width: 100%;
+	padding: 8px;
+	margin: 10px;
+}
+
+.btn-2{
+	margin-top: 20px;
+	background-color: #EA513E;
+	color: white;
+	border: none;
+	padding: 15px;
+}
+.copyright{
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+.top{
+	margin-bottom: 20px;
+	float: right;
+}
+.top a{
+	color: white;
+	padding: 20px;
+	background-color: #EA513E;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 30px 20px;
+}
+ 
+
+
+
+
+
